@@ -19,7 +19,7 @@ linkedin_username: "Centre for Automotive Safety Research"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 
-markdown: kramdown
+markdown: "kramdown"
 theme: "minima"
 
 rss: rss
