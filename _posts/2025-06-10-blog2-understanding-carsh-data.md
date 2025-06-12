@@ -1,4 +1,4 @@
-# Blog 002: Understanding typical crash data. 
+# Blog #002: Understanding typical crash data
 
 Before we dive into downloading and analysing crash data, it’s important to understand how this kind of data is usually organised.
 
