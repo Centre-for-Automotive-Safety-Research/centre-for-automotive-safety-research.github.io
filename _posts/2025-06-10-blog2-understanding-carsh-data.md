@@ -12,13 +12,13 @@ In this example, the crash involves **one crash record**, **two vehicle records*
 
 <pre>
 ```mermaid
-graph TD
-    Crash[Crash]
-    Crash --> VehicleA[Vehicle A]
-    Crash --> VehicleB[Vehicle B]
-    VehicleA --> Driver1[A: Driver]
-    VehicleA --> Passenger1[A: Left-front-seat passenger]
-    VehicleB --> DriverB[B: Driver]
+graph TD;
+    Crash[Crash];
+    Crash --> VehicleA[Vehicle A];
+    Crash --> VehicleB[Vehicle B];
+    VehicleA --> Driver1[A: Driver];
+    VehicleA --> Passenger1[A: Left-front-seat passenger];
+    VehicleB --> DriverB[B: Driver];
 ```
 </pre>
 Each of these levels has its own characteristics:
