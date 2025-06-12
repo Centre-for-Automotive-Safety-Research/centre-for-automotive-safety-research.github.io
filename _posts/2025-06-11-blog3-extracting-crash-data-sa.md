@@ -1,6 +1,6 @@
 # Blog #003: Downloading SA's public crash data
 
-Now that we’ve covered the basics of crash data structure (see [Blog 002]() if you missed it), let’s explore where and how to access South Australia’s crash data.
+Now that we’ve covered the basics of crash data structure (see [Blog 002](https://centre-for-automotive-safety-research.github.io/2025/06/10/blog2-understanding-carsh-data.html) if you missed it), let’s explore where and how to access South Australia’s crash data.
 
 ### Exploring Data.SA crash data
 
@@ -19,7 +19,7 @@ Note that the geospatial data includes only the crash-level information - vehicl
 
 Let’s walk through how to download and load the most recent (2019-2023) crash, vehicle, and person data from the Data.SA's data tables using Python.
 
-Start by opening your Python editor. If you need help setting up your environment, see [Blog 001]().
+Start by opening your Python editor. If you need help setting up your environment, see [Blog 001](https://centre-for-automotive-safety-research.github.io/2025/06/09/blog1-setting-up-python.html).
 
 You’ll need a few libraries:
 
