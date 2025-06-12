@@ -113,6 +113,7 @@ year_urls = {
 download_sa_crash_data_individual_year(year_urls)
 ```
 Now, you will have the following dataframes of crash, vehicle and person data:
+
 | Year       | Crash data               | Vehicle data               | Person data               | 
 |:-----------|------------------------: |------------------------:   |-------------------------: |
 | 2012       | raw_2012_crash_data      | raw_2012_vehicle_data      | raw_2012_person_data      | 
@@ -123,3 +124,5 @@ Now, you will have the following dataframes of crash, vehicle and person data:
 | 2017       | raw_2017_crash_data      | raw_2017_vehicle_data      | raw_2017_person_data      | 
 | 2018       | raw_2018_crash_data      | raw_2018_vehicle_data      | raw_2018_person_data      | 
 | 2019-2023  | raw_2019_2023_crash_data | raw_2019_2023_vehicle_data | raw_2019_2023_person_data | 
+
+
