@@ -5,12 +5,12 @@ The Centre for Automotive Safety Research (CASR) is a multidisciplinary research
 
 This blog has been created by CASR's data analysts. We’re the team crunching the numbers and statistics behind CASR’s research. This blog is where we share insights, cool projects, and the occasional “ah-ha” moment from working with road safety data. It's our way of opening the data-door to anyone who's curious. 
 
-Our go-to programming language is `python`. It's powerful, flexible, and great for sharing reproducible analysis. All our blog posts will feature Python code, so if you're a fellow coder or just curious, you'll be able to follow along, adapt our methods, and explore the data yourself.
+Our go-to programming language is `python`. It's powerful, flexible, and great for sharing reproducible analysis. Our blog posts will feature `python` code, so if you're a fellow coder or just curious, you'll be able to follow along, adapt our methods, and explore the data yourself.
 
 ---
 
 ## Road safety data analysis
-Road safety data comes in many shapes and sizes — from crash reports to road infrastructure maps. In this blog, we’ll aim to use publicly available datasets wherever possible, so our analyses are open, transparent, and ready for you to experiment with.
+Road safety data comes in many shapes and sizes - from crash reports to road infrastructure maps. In this blog, we’ll aim to use publicly available datasets wherever possible, so our analyses are open, transparent, and ready for you to experiment with.
 
 ### Crash data
 Here in South Australia, we are fortunate that the South Australian government's Department for Infrastructure and Transport (DIT) uploads semi-detailed data to a publicly available platform: [Data.SA](https://data.sa.gov.au/).
