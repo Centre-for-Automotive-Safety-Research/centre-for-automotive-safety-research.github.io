@@ -5,7 +5,7 @@ The Centre for Automotive Safety Research (CASR) is a multidisciplinary research
 
 This blog has been created by CASR's data analysts. We’re the team crunching the numbers and statistics behind CASR’s research. This blog is where we share insights, cool projects, and the occasional “ah-ha” moment from working with road safety data. It's our way of opening the data-door to anyone who's curious. 
 
-Our go-to programming language is **Python** — it's powerful, flexible, and great for sharing reproducible analysis. All our blog posts will feature Python code, so if you're a fellow coder or just curious, you'll be able to follow along, adapt our methods, and explore the data yourself.
+Our go-to programming language is **Python**. It's powerful, flexible, and great for sharing reproducible analysis. All our blog posts will feature Python code, so if you're a fellow coder or just curious, you'll be able to follow along, adapt our methods, and explore the data yourself.
 
 ---
 
