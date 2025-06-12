@@ -62,7 +62,7 @@ with zipfile.ZipFile(io.BytesIO(response.content)) as z:
     raw_2019_2023_person_data = pd.read_csv(z.open("2019-2023_DATA_SA_Casualty.csv"), low_memory=False)
     print("Completed download for 2019-2023\n")
 ```
-## Accessing earlier years
+## Extracting data from earlier years
 If you want data from before 2019, the South Australian Government provides yearly datasets dating back to 2012. Because these are individual files per year, we can create a simple function to download each one automatically:
 
 ```python
