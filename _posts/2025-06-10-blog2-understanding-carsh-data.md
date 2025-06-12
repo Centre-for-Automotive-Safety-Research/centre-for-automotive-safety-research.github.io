@@ -39,5 +39,3 @@ To connect these tables, each record uses **linking variables** (sometimes calle
 
 This way, we can join data across tables to analyse the full picture.
 
----
-
