@@ -38,4 +38,4 @@ To connect these tables, each record uses **linking variables** (sometimes calle
 - A **Vehicle ID** connects people to the vehicle they were in.
 
 This way, we can join data across tables to analyse the full picture.
-
+This is explained later, in [Blog #004]().
