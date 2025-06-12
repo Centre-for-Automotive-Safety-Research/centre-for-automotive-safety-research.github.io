@@ -10,6 +10,7 @@ Crashes aren’t just single events with one record. They often involve multiple
 
 In this example, the crash involves **one crash record**, **two vehicle records**, and **three people records**. Here's a visual demonstration of this example:
 
+<pre>
 ```mermaid
 graph TD
     Crash[Crash]
@@ -19,7 +20,7 @@ graph TD
     VehicleA --> Passenger1[A: Left-front-seat passenger]
     VehicleB --> DriverB[B: Driver]
 ```
-
+</pre>
 Each of these levels has its own characteristics:
 
 - **Crash:** location, date and time, weather conditions, crash type, etc.  
