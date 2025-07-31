@@ -92,12 +92,12 @@ These installations are tracked in `pyproject.toml` and `requirements.txt`.
 2. You’ll see a basic template:
    ```python
    def main():
-       print("Hello, world!")
+       print("Hello, from main.py!")
 
    if __name__ == "__main__":
        main()
    ```
-Begin building your script by adding imports and writing functions within this file.
+Begin building your script by adding imports and writing functions within this file. If you want, you can start fresh by deleting the existing content.
 
 
 ## Step 8: Run Your Script
