@@ -1,4 +1,4 @@
-# Blog #003: Downloading SA's public crash data
+# Public crash data: Downloading SA's public crash data
 
 Now that we’ve covered the basics of crash data structure (see [Blog #002](https://centre-for-automotive-safety-research.github.io/2025/06/10/blog2-understanding-carsh-data.html) if you missed it), let’s explore where and how to access South Australia’s crash data.
 
