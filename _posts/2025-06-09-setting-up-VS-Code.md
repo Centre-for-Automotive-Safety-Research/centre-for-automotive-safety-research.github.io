@@ -74,7 +74,7 @@ You should now see `(.venv)` at the beginning of your terminal prompt.
 Install the packages you'll use for your project.
 1. Use the following command to install a package:
    ```bash
-   uv pip install [package-name]
+   uv pip install ***[package-name]***
    ```
 Example:
 ```bash
