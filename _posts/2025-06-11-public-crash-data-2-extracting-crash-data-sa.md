@@ -1,6 +1,6 @@
-# Public crash data: Downloading SA's public crash data
+# Public crash data analysis: Downloading SA's public crash data
 
-Now that we’ve covered the basics of crash data structure (see [Blog #002](https://centre-for-automotive-safety-research.github.io/2025/06/10/blog2-understanding-carsh-data.html) if you missed it), let’s explore where and how to access South Australia’s crash data.
+Now that we’ve covered the basics of crash data structure (see [Public crash data analysis: Understanding typical crash data](https://centre-for-automotive-safety-research.github.io/2025/06/10/public-crash-data-1-understanding-crash-data.html) if you missed it), let’s explore where and how to access South Australia’s crash data.
 
 ### Exploring Data.SA crash data
 
@@ -19,20 +19,20 @@ Note that the geospatial data includes only the crash-level information - vehicl
 
 Let’s walk through how to download and load the most recent (2019-2023) crash, vehicle, and person data from the Data.SA's data tables using Python.
 
-Start by opening your Python editor. If you need help setting up your environment, see [Blog #001](https://centre-for-automotive-safety-research.github.io/2025/06/09/blog1-setting-up-python.html).
+Start by opening your Python editor and setting up your project. If you want to use VS Code and `uv`, follow the instructions in [Setting up a coding workspace](https://centre-for-automotive-safety-research.github.io/2025/06/09/setting-up-VS-Code.html).
 
-You’ll need a few libraries:
+Additionally, you’ll need a few libraries:
 
 - `pandas`: a powerful data manipulation and analysis toolkit  
 - `zipfile`: for handling ZIP files  
 - `requests`: to download files from the web  
 - `io`: for handling in-memory file operations  
 
-If you do not have these libraries installed, you will need to install them. Use pip in your Python environment:
+If you do not have these libraries installed, you will need to install them. If you are using `uv`, use the following Use pip in your Python environment:
 
 ```bash
-pip install pandas
-pip install requests
+uv pip install pandas
+uv pip install requests
 ```
 (Note: `zipfile` and `io` are part of the Python standard library and do not require installation.)
 
@@ -62,6 +62,12 @@ with zipfile.ZipFile(io.BytesIO(response.content)) as z:
     raw_2019_2023_person_data = pd.read_csv(z.open("2019-2023_DATA_SA_Casualty.csv"), low_memory=False)
     print("Completed download for 2019-2023\n")
 ```
+To split these into individual years, you can run the following code: 
+
+```python
+
+```
+
 ## Extracting data from earlier years
 If you want data from before 2019, the South Australian Government provides yearly datasets dating back to 2012. Because these are individual files per year, we can create a simple function to download each one automatically:
 
