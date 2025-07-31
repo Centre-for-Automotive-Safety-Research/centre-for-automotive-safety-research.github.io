@@ -70,7 +70,7 @@ A virtual environment keeps your dependencies isolated from other projects.
 You should now see `(.venv)` at the beginning of your terminal prompt. 
 
 
-## Step 6: Install Python Packages
+## Step 6: Install python packages
 Install the packages you'll use for your project.
 1. Use the following command to install a package:
    ```bash
@@ -100,7 +100,7 @@ These installations are tracked in `pyproject.toml` and `requirements.txt`.
 Begin building your script by adding imports and writing functions within this file. If you want, you can start fresh by deleting the existing content.
 
 
-## Step 8: Run Your Script
+## Step 8: Run your script
 To run your project within the virtual environment:
 ```bash
 uv run main.py
