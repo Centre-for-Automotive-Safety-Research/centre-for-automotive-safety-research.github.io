@@ -1,4 +1,4 @@
-# Blog #002: Understanding typical crash data
+# Public crash data analysis: Understanding typical crash data
 
 Before we dive into downloading and analysing crash data, it’s important to understand how this kind of data is usually organised.
 
@@ -38,4 +38,4 @@ To connect these tables, each record uses **linking variables** (sometimes calle
 - A **Vehicle ID** connects people to the vehicle they were in.
 
 This way, we can join data across tables to analyse the full picture.
-This is explained later, in [Blog #004]().
+This is explained later, in [Public crash data analysis: Merging crash data]().
