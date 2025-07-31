@@ -1,6 +1,6 @@
 # Setting up a coding workspace
 At CASR, we aim for consistency in how we set up and run Python code - we want every script to run seamlessly on any analyst’s machine, without worrying about different setups.
-To help new team members get started, this guide will walk through how to set up a Python coding workspace using Visual Studio Code (VS Code) and a fast, modern tool called [`uv`](https://github.com/astral-sh/uv) for managing environments and packages.
+To help new team members get started, this guide will walk through how to set up a Python coding workspace using Visual Studio Code (VS Code) and a fast, modern tool called [`uv`](https://github.com/astral-sh/uv) for managing environments and libraries.
 *Note: These instructions assume your equipment is fairly standard. We use Windows, however, if you’re using a different setup (e.g., Mac, Linux, or personal machine), some steps may differ slightly.*
 
 ---
@@ -20,9 +20,9 @@ Microsoft's [VS Code](https://code.visualstudio.com/) is a lightweight and power
 
 
 ## Step 2: Install uv
-[`uv`](https://github.com/astral-sh/uv) is a modern, fast package manager for Python. 
-The reason we use `uv` is because it calculates which versions of packages work together, then essentially freezes the package versions so that the code will always run. 
-If the package versions are updated, their interdependencies may be broken and the code may not run properly.
+[`uv`](https://github.com/astral-sh/uv) is a modern, fast library manager for Python. 
+The reason we use `uv` is because it calculates which versions of libraries work together, then essentially freezes the library versions so that the code will always run. 
+If the library versions are updated, their interdependencies may be broken and the code may not run properly.
 1. Open a new terminal in VS Code (`Terminal > New Terminal` or ``` Ctrl + Shift + ` ```)
 2. Run the following command:
    ```powershell
@@ -71,17 +71,17 @@ A virtual environment keeps your dependencies isolated from other projects.
 You should now see `(.venv)` at the beginning of your terminal prompt. 
 
 
-## Step 6: Install python packages
-Install the packages you'll use for your project.
-1. Use the following command to install a package:
+## Step 6: Install python libraries
+Install the libraries you'll use for your project.
+1. Use the following command to install a library:
    ```bash
-   uv pip install ***[package-name]***
+   uv pip install ***[library-name]***
    ```
 Example:
 ```bash
 uv pip install pandas
 ```
-Other commonly used packages include:
+Other commonly used libraries include:
 ```bash
 uv pip install matplotlib seaborn openpyxl scikit-learn pyodbc
 ```
