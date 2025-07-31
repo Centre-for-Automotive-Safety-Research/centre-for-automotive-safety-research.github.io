@@ -18,7 +18,7 @@ Microsoft's [VS Code](https://code.visualstudio.com/) is a lightweight and power
 5. (Optional) Also install **Pylance** for better type-checking and IntelliSense
 
 
-## Step 2: Install `uv`
+## Step 2: Install uv
 [`uv`](https://github.com/astral-sh/uv) is a modern, fast package manager for Python. 
 The reason we use `uv` is because it calculates which versions of packages work together, then essentially freezes the package versions so that the code will always run. 
 If the package versions are updated, their interdependencies may be broken and the code may not run properly.
@@ -36,7 +36,7 @@ If the package versions are updated, their interdependencies may be broken and t
 3. You’re now ready to initialise your project
 
 
-## Step 4: Initialise a `uv` project
+## Step 4: Initialise a uv project
 This sets up the project with a standard structure.
 1. Open a new terminal in VS Code (`Terminal > New Terminal` or ``` Ctrl + Shift + ` ```)
 2. Run:
@@ -87,7 +87,7 @@ uv pip install matplotlib seaborn openpyxl scikit-learn pyodbc
 These installations are tracked in `pyproject.toml` and `requirements.txt`.
 
 
-## Step 7: Edit `main.py`
+## Step 7: Edit main.py
 1. Use the **Explorer** tab to open `main.py`
 2. You’ll see a basic template:
    ```python
