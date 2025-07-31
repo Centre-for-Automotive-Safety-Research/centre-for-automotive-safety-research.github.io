@@ -22,12 +22,12 @@ Microsoft's [VS Code](https://code.visualstudio.com/) is a lightweight and power
 [`uv`](https://github.com/astral-sh/uv) is a modern, fast package manager for Python. 
 The reason we use `uv` is because it calculates which versions of packages work together, then essentially freezes the package versions so that the code will always run. 
 If the package versions are updated, their interdependencies may be broken and the code may not run properly.
-1. Open a new terminal in VS Code (`Terminal > New Terminal` or `Ctrl + Shift + ``)
+1. Open a new terminal in VS Code (`Terminal > New Terminal` or ``` Ctrl + Shift + ` ```)
 2. Run the following command:
    ```powershell
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
-3. Close the terminal once installation completes (X button in top-right corner of terminal area).
+3. Close the terminal once installation completes (`X` button in top-right corner of terminal area).
 
 
 ## Step 3: Create a new project folder
@@ -38,7 +38,7 @@ If the package versions are updated, their interdependencies may be broken and t
 
 ## Step 4: Initialise a `uv` project
 This sets up the project with a standard structure.
-1. Open a new terminal in VS Code (`Terminal > New Terminal` or `Ctrl + Shift + ``)
+1. Open a new terminal in VS Code (`Terminal > New Terminal` or ``` Ctrl + Shift + ` ```)
 2. Run:
    ```bash
    uv init
@@ -80,7 +80,7 @@ Example:
 ```bash
 uv pip install pandas
 ```
-Other commonly used packages at CASR:
+Other commonly used packages include:
 ```bash
 uv pip install matplotlib seaborn openpyxl scikit-learn pyodbc
 ```
