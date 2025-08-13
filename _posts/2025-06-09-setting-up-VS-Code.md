@@ -100,4 +100,5 @@ You can create multiple scripts and run them individually by running `uv run <sc
 With this setup, you're ready to:
 - Use a consistent workflow with `uv`
 - Write and run Python code in VS Code
+
 Steps 1 & 2 are only done once per computer. For each new project, just repeat steps 3–7.
