@@ -1,7 +1,7 @@
 # Setting up a coding workspace
 At CASR, we aim for consistency in how we set up and run Python code - we want every script to run seamlessly on any analyst’s machine, without worrying about different setups.
 To help new team members get started, this guide will walk through how to set up a Python coding workspace using Visual Studio Code (VS Code) and a fast, modern tool called [`uv`](https://github.com/astral-sh/uv) for managing environments and libraries.
-*Note: These instructions assume your equipment is fairly standard. We use Windows, however, if you’re using a different setup (e.g., Mac, Linux, or personal machine), some steps may differ slightly.*
+*Note: These instructions are written for Windows computers, which is our standard setup. However, if you’re using a different setup (e.g., Mac, Linux, or personal machine), some steps may differ slightly.*
 
 ---
 
@@ -21,10 +21,10 @@ Microsoft's [VS Code](https://code.visualstudio.com/) is a lightweight and power
 
 ## Step 2: Install uv
 [`uv`](https://github.com/astral-sh/uv) is a modern, fast library manager for Python. 
-The reason we use `uv` is because it calculates which versions of libraries work together, then essentially freezes the library versions so that the code will always run. 
+The reason we use `uv` is because it calculates which version of Python and which versions of specific libraries work together, then essentially freezes the library versions so that the code will always run. 
 If the library versions are updated, their interdependencies may be broken and the code may not run properly.
 1. Open a new terminal in VS Code (`Terminal > New Terminal` or ``` Ctrl + Shift + ` ```)
-2. Run the following command:
+2. Run the following command to install `uv`:
    ```powershell
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
@@ -32,6 +32,7 @@ If the library versions are updated, their interdependencies may be broken and t
 
 
 ## Step 3: Create a new project folder
+This keeps your project files organised in one place.
 1. Create a new folder to store your project
 2. Open this folder in VS Code (`File > Open Folder`)
 3. You’re now ready to initialise your project
@@ -48,47 +49,29 @@ This will create:
 - `main.py`: your main entry point for the script  
 - `pyproject.toml`: stores metadata and dependencies  
 - `.gitignore`: a default ignore list for Git
+You should receive an output: "Initialized project _______"
 
 
-## Step 5: Create and activate a virtual environment
-A virtual environment keeps your dependencies isolated from other projects.
-1. Run:
-   ```bash
-   uv venv .venv
-   ```
-2. Activate it:
-   ```bash
-   .\.venv\Scripts\Activate.ps1
-   ```
-3. If you get a security warning, run:
-   ```powershell
-   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-   ```
-   Then activate again:
-   ```bash
-   .\.venv\Scripts\Activate.ps1
-   ```
-You should now see `(.venv)` at the beginning of your terminal prompt. 
 
-
-## Step 6: Install python libraries
-Install the libraries you'll use for your project.
+## Step 5: Install necessary python libraries
+Install the libraries you'll use for your project. You may not know what libraries you will use yet, however, if you attempt to run your code before installing the necessary libraries, the code will not run properly. If it's easier, you can edit your code, then come back to this step before you run it. 
 1. Use the following command to install a library:
    ```bash
-   uv pip install ***[library-name]***
+   uv add <library-name>
    ```
 Example:
 ```bash
-uv pip install pandas
+uv add pandas
 ```
-Other commonly used libraries include:
+Note that you can install multiple libraries at once. Other commonly used libraries include:
 ```bash
-uv pip install matplotlib seaborn openpyxl scikit-learn pyodbc
+uv add matplotlib seaborn openpyxl scikit-learn pyodbc
 ```
 These installations are tracked in `pyproject.toml` and `requirements.txt`.
+This step will also create a virtual environment (stored in the folder '.venv'). This virtual environment keeps your project's libraries seperate from others so nothing conflicts. 
 
 
-## Step 7: Edit main.py
+## Step 6: Edit main.py
 1. Use the **Explorer** tab to open `main.py`
 2. You’ll see a basic template:
    ```python
@@ -98,18 +81,23 @@ These installations are tracked in `pyproject.toml` and `requirements.txt`.
    if __name__ == "__main__":
        main()
    ```
-Begin building your script by adding imports and writing functions within this file. If you want, you can start fresh by deleting the existing content.
+Begin building your script by adding imports and writing functions within this file. You can either use this as a starting point or replace it entirely with your own code.
 
 
-## Step 8: Run your script
-To run your project within the virtual environment:
+## Step 7: Run your script
+1. Save any changes to your code. 
+2. To run your project:
 ```bash
 uv run main.py
 ```
+If you forget to install a required library, uv will tell you which one is missing. Just run `uv add <library-name>` to install it and try again.
+You can create multiple scripts and run them individually by running `uv run <script-name>.py`.
+
 ---
+
 
 ## Summary
 With this setup, you're ready to:
 - Use a consistent workflow with `uv`
 - Write and run Python code in VS Code
-Steps 1 & 2 are only done once per computer. For each new project, just repeat steps 3–8.
+Steps 1 & 2 are only done once per computer. For each new project, just repeat steps 3–7.
