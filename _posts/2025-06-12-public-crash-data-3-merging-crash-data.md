@@ -15,7 +15,7 @@ To perform meaningful analyses, we need to link these datasets together. For exa
 Create a new file in the project folder and name it `2.Merge_SA_crash_data.py`. 
 
 ## Load the crash, vehicle and person 
-We'll assume you have downloaded the crash data from [Data.SA](https://data.sa.gov.au/data/dataset/road-crash-data), and saved the raw data to a folder named: `Raw_SA_crash_data_2012_2023`, as outlined in [___________________](http://________).
+We'll assume you have downloaded the crash data from [Data.SA](https://data.sa.gov.au/data/dataset/road-crash-data), and saved the raw data to a folder named: `Raw_SA_crash_data_2012_2023`, as outlined in [Downloading SA's public crash data](http://________).
 
 ```python
 import pandas as pd
