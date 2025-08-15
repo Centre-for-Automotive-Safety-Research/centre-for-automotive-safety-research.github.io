@@ -72,7 +72,7 @@ plt.show()
 
 ```
 The output graph will look like this:
-
+![Alt text](_posts_images/2012_2023_yearly_crash_totals.png)
 
 ## Plot crashes by severity (all categories)
 The data contains a crash severity code `CSEF Severity`.
