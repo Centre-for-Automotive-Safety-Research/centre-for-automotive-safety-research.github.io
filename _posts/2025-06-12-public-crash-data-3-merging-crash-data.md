@@ -118,6 +118,7 @@ print(f"- {crash_vehicle_file}")
 print(f"- {crash_vehicle_person_file}\n")
 ```
 
+## Run the script
 To run this script at any time, first save your changes (Ctrl + S), then execute it using `uv` in the terminal:
 
 ```bash
