@@ -175,7 +175,7 @@ all_person_data.to_csv(person_file_path, index=False)
 print("\nFiles saved successfully:")
 print(f"- {crash_file_path}")
 print(f"- {vehicle_file_path}")
-print(f"- {person_file_path}")
+print(f"- {person_file_path}\n")
 ```
 
 To run this script at any time, first save your changes (Ctrl + S), then execute it using `uv` in the terminal:
