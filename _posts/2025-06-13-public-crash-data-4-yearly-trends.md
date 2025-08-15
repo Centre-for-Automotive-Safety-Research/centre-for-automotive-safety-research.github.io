@@ -69,7 +69,6 @@ plt.savefig(os.path.join(output_folder, "2012_2023_yearly_crash_totals.png"), dp
 print(f"Yearly crash totals graph saved to: {output_file}")
 
 plt.show()
-
 ```
 The generated graph will look like this:
 ![Alt text](/_posts_images/2012_2023_yearly_crash_totals.png)
