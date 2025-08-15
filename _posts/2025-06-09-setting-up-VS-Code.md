@@ -1,6 +1,7 @@
 # Setting up a coding workspace
 At CASR, we aim for consistency in how we set up and run Python code - we want every script to run seamlessly on any analyst’s machine, without worrying about different setups.
 To help new team members get started, this guide will walk through how to set up a Python coding workspace using Visual Studio Code (VS Code) and a fast, modern tool called [`uv`](https://github.com/astral-sh/uv) for managing environments and libraries.
+
 *Note: These instructions are written for Windows computers, which is our standard setup. However, if you’re using a different setup (e.g., Mac, Linux, or personal machine), some steps may differ slightly.*
 
 ---
