@@ -39,7 +39,7 @@ uv add pandas requests
 ```
 *Note: `zipfile`, `io` and `os` are part of the Python standard library and do not require installation.*
 
-You can choose to edit your existing `main.py` script, rename it, or start completely fresh. In this example, we’ll create a new script called `Download_SA_crash_data.py`. Add the code below to your chosen `.py` file to download crash data for the years 2019 to 2023:
+You can choose to edit your existing `main.py` script, rename it, or start completely fresh. In this example, we’ll create a new script called `1.Download_SA_crash_data.py`. Add the code below to your chosen `.py` file to download crash data for the years 2019 to 2023:
 
 ```python
 import pandas as pd 
@@ -113,7 +113,7 @@ year_urls = {
 download_sa_crash_data_individual_year(year_urls)
 ```
 
-## Combine all crash data, vehicle data and person data (seperately) into single dataframes
+## Combine all crash data, vehicle data and person data (separately) into single dataframes
 From the previous steps, we now have separate DataFrames for each year from 2012 to 2018, plus a single combined DataFrame for 2019–2023. These are currently only stored in memory (they haven’t been saved to any files yet). 
 
 | Year       | Crash data               | Vehicle data               | Person data               | 
@@ -181,7 +181,7 @@ print(f"- {person_file_path}\n")
 To run this script at any time, first save your changes (Ctrl + S), then execute it using `uv` in the terminal:
 
 ```bash
-uv run Download_SA_crash_data.py
+uv run 1.Download_SA_crash_data.py
 ```
 
 If everything works correctly, the final output in your terminal should look something like this:
