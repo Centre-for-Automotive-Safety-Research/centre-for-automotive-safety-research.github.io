@@ -155,7 +155,7 @@ Finally, to save the raw downloaded data, we first create a folder (if it doesnâ
 
 ```python
 # ---------------------------------------------------------
-# Step 4: Save combined data to CSV files
+# Part 4: Save combined data to CSV files
 # ---------------------------------------------------------
 
 # Folder name (will be created in the current working directory)
