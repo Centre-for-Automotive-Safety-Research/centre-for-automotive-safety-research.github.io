@@ -118,4 +118,24 @@ print(f"- {crash_vehicle_file}")
 print(f"- {crash_vehicle_person_file}\n")
 ```
 
+To run this script at any time, first save your changes (Ctrl + S), then execute it using `uv` in the terminal:
 
+```bash
+uv run 2.Merge_SA_crash_data.py
+```
+
+If everything works correctly, the final output in your terminal should look something like this:
+
+```bash
+Data loaded successfully:
+- Crash data:   (177776, 34)
+- Vehicle data: (379600, 18)
+- Person data:  (72409, 12)
+
+Crash + Vehicle merged: (379600, 51)
+Crash + Vehicle + Person merged: (72409, 61)
+
+Merged files saved successfully:
+- Raw_SA_crash_data_2012_2023\2012_2023_vehicle_crash.csv
+- Raw_SA_crash_data_2012_2023\2012_2023_person_vehicle_crash.csv
+```
