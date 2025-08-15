@@ -9,8 +9,6 @@ When working with crash data, information is often split across multiple files:
 
 To perform meaningful analyses, we need to link these datasets together. For example, if you want to study the types of vehicle involved in crashes with serious injuries, you need to connect crash details -> vehicles -> people. This is done using a process called **merging** in Python.
 
-
-
 ## Create a new Python script
 Create a new file in the project folder and name it `2.Merge_SA_crash_data.py`. 
 
