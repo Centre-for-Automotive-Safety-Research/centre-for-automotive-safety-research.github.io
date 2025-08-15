@@ -71,7 +71,7 @@ print(f"Yearly crash totals graph saved to: {output_file}")
 plt.show()
 ```
 The generated graph will look like this:
-![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/_posts_images/2012_2023_yearly_crash_totals.png)
+![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/posts_images/2012_2023_yearly_crash_totals.png)
 
 ## Plot crashes by severity (all categories)
 The data contains a crash severity code `CSEF Severity`.
@@ -138,7 +138,7 @@ plt.show()
 ```
 
 The generated graph will look like this:
-![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/_posts_images/2012_2023_injury_severity_counts_per_year.png)
+![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/posts_images/2012_2023_injury_severity_counts_per_year.png)
 
 ## Plot only serious injury and fatal crashes
 Sometimes we’re only interested in the most severe crash outcomes.
@@ -175,7 +175,7 @@ print(f"Serious injury + fatal crash graph saved to: {output_file_subset}")
 plt.show()
 ```
 The generated graph will look like this:
-![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/_posts_images/2012_2023_serious_and_fatal_counts_per_year.png)
+![Alt text](https://raw.githubusercontent.com/Centre-for-Automotive-Safety-Research/centre-for-automotive-safety-research.github.io/main/posts_images/2012_2023_serious_and_fatal_counts_per_year.png)
 
 ## Run the script
 As always, remember to save the script (Ctrl + S), then run it in your terminal using:
