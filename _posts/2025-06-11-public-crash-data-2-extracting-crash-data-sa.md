@@ -1,5 +1,7 @@
 # Public crash data analysis: Downloading SA's public crash data
 
+> This tutorial will walk you through downloading crash, vehicle, and person datasets for South Australian road crashes from [Data.SA](http://data.sa.gov.au), combining them into single files, and saving them to your computer.
+
 Now that we’ve covered the basics of crash data structure (see [Public crash data analysis: Understanding typical crash data](https://centre-for-automotive-safety-research.github.io/2025/06/10/public-crash-data-1-understanding-crash-data.html) if you missed it), let’s explore where and how to access South Australia’s crash data.
 
 ### Exploring Data.SA crash data
@@ -13,8 +15,6 @@ The South Australian Government’s Department for Infrastructure and Transport 
   Available here: [Crash location maps](https://data.sa.gov.au/data/dataset/road-crashes-in-sa)  
 
 *Note: the geospatial data includes only the crash-level information - vehicle and person details are **not** included.*
-
-This tutorial will walk you through downloading crash, vehicle, and person datasets for South Australian road crashes from [Data.SA](http://data.sa.gov.au), combining them into single files, and saving them to your computer.
 
 ---
 
