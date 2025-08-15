@@ -38,4 +38,4 @@ To connect these tables, each record uses **linking variables** (sometimes calle
 - A **Vehicle ID** connects people to the vehicle they were in.
 
 This way, we can join data across tables to analyse the full picture.
-This is explained later, in [Public crash data analysis: Merging crash data]().
+Using downloaded crash data ([Downloading SA's public crash data](_posts/2025-06-11-public-crash-data-2-extracting-crash-data-sa.md)), the merging process is explained later, in [Merging SA crash, vehicle and person data](http://__________).
