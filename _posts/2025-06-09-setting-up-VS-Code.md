@@ -55,7 +55,8 @@ You should receive an output: "Initialized project _______"
 
 ## Step 5: Install necessary python libraries
 Install the libraries you'll use for your project. You may not know what libraries you will use yet, however, if you attempt to run your code before installing the necessary libraries, the code will not run properly. If it's easier, you can edit your code, then come back to this step before you run it. 
-1. Use the following command to install a library:
+
+Use the following command to install a library:
    ```bash
    uv add <library-name>
    ```
