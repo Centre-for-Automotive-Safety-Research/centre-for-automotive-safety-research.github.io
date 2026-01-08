@@ -33,7 +33,7 @@ If the library versions are updated, their interdependencies may be broken and t
 
 
 ## Step 3: Create a new project folder
-This keeps your project files organised in one place.
+For an individual project, this keeps your project files organised in one place.
 1. Create a new folder to store your project
 2. Open this folder in VS Code (`File > Open Folder`)
 3. You’re now ready to initialise your project
@@ -88,7 +88,7 @@ Begin building your script by adding imports and writing functions within this f
 
 ## Step 7: Run your script
 1. Save any changes to your code. 
-2. To run your project:
+2. To run your project, in the terminal, enter:
 ```bash
 uv run main.py
 ```

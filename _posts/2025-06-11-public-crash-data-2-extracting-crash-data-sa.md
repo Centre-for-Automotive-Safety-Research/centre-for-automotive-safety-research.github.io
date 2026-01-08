@@ -18,35 +18,33 @@ The South Australian Government’s Department for Infrastructure and Transport 
 
 ---
 
-## Downloading most recent (2019-2023) crash data from Data.SA
+## Downloading most recent (2020-2024) crash data from Data.SA
 
 Let’s walk through how to download and load the most recent (2019-2023) crash, vehicle, and person data from the Data.SA's data tables using Python. 
 
 Start by opening your Python editor and setting up your project. If you want to use VS Code and `uv`, follow the instructions in [Setting up a coding workspace](https://centre-for-automotive-safety-research.github.io/2025/06/09/setting-up-VS-Code.html).
 
+Download the data tables by going to the DataSA website, downloading the desired files, and put them into a folder in your project space. 
+
+
+
 Additionally, you’ll need to use a few libraries:
 
 - `pandas`: a powerful data manipulation and analysis toolkit  
-- `zipfile`: for handling ZIP files  
-- `requests`: to download files from the web  
-- `io`: for handling in-memory file operations
-- `os`: for interacting with the operating system, e.g., creating folders and building file paths
+- `path`: for specifying paths to folders and files
 
-If you do not have these libraries installed in your working environment, you will need to install them. If you are using `uv`, use the following code in your Python environment:
+If you do not have these libraries installed in your working environment, you will need to add them. If you are using `uv`, use the following code in your Python environment:
 
 ```bash
-uv add pandas requests
+uv add pandas
 ```
-*Note: `zipfile`, `io` and `os` are part of the Python standard library and do not require installation.*
+*Note: `path`is part of the Python standard library and do not require installation.*
 
 You can choose to edit your existing `main.py` script, rename it, or start completely fresh. In this example, we’ll create a new script called `1.Download_SA_crash_data.py`. Add the code below to your chosen `.py` file to download crash data for the years 2019 to 2023:
 
 ```python
 import pandas as pd 
-import zipfile
-import requests
-import io
-import os
+import path
 
 # ---------------------------------------------------------
 # Part 1: Download 2019-2023 data (all in one ZIP file)
